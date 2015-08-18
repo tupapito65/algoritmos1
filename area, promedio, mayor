@@ -1,0 +1,66 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+int main()
+{
+	int opcion;
+	float a,b,c,area,promedio,lado,x,y;
+	do
+	{
+		cout<<"----------MENU----------\n";
+		cout<<"1.-Area del cuadrado\n";
+		cout<<"2.-Promedio de tres numeros\n";
+		cout<<"3.-Mayor de dos numeros\n";
+		cout<<"0.-Salir\n";
+		cin>>opcion;
+		switch(opcion)
+		{
+			case 1:
+					cout<<"Ingrese el lado";
+					cin>>lado;
+					area=lado*lado;
+					cout<<"El area es:"<<area;
+					cout<<endl;
+					break;
+			case 2:
+					cout<<"Ingrese el primer numero";
+					cin>>a;
+					cout<<"Ingrese el segundo numero";
+					cin>>b;
+					cout<<"Ingrese el tercer numero";
+					cin>>c;
+					promedio=(a+b+c)/3;
+					cout<<"El promedio es"<<promedio;
+					cout<<endl;
+					break;
+			case 3:
+					cout<<"Ingrese el primer numero";
+					cin>>x;
+					cout<<"Ingrese el segundo numero";
+					cin>>y;
+					if(x>y)
+					{
+						cout<<"El mayor es:"<<x;
+						cout<<endl;
+					}
+						else
+						{
+							cout<<"El mayor es:"<<y;
+							cout<<endl;
+						}
+					break;
+			case 0:
+					break;
+
+			default:
+					cout<<"Opcion invalida";
+					break;
+		}
+	getch();
+	system("cls");
+	}while(opcion!=0);
+}

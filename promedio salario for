@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+void main()
+{
+	int i=0,n;
+	float salario,s=0,sb,promedio,sn;
+	cout<<"Ingrese el numero de empleados";
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		cout<<"Ingrese el salario";
+		cin>>salario;
+		if(salario>=2800)
+		{
+
+			sn=salario-(salario*0.13)-(salario*0.121);
+			s=s+sn;
+		}
+		else
+		{
+			sn=salario-(salario*0.13);
+			s=s+sn;
+		}
+	}
+	promedio=s/n;
+	cout<<"El promedio es:"<<promedio;
+	getch();
+}

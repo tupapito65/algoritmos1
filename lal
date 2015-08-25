@@ -1,0 +1,52 @@
+// lel.cpp : Defines the entry point for the console application.
+//autor:luis alberto Fecha: 25/08/15
+
+#include "stdafx.h"
+#include "stdlib.h"
+#include "conio.h"
+#include "math.h"
+#include <iostream>
+#define pi 3.14
+
+using namespace std;
+
+void circunferencia();
+void cuadratica();
+void main()
+{int op;
+do{
+   cout<<"*********MENU**********\n";
+   cout<<"1.-Calcular el area de la circunferencia\n";
+   cout<<"2.-Calcular soluciones reales de la ecuacion cuadratica\n";
+   cout<<"0.-Salir\n";
+   cout<<"Digite la opcion que desea\n";
+   cin>>op;
+   switch(op)
+   {case 1:
+         circunferencia();
+		 break;
+   case 2:
+	     cuadratica();
+		 break;
+   case 0:
+	     break;
+   default:
+	     cout<<"Elija la opcion correcta\n";
+   }getch()
+	   ;
+}
+while(op!=0);
+}
+void circunferencia()
+{
+	int a,b,c;
+    cout<<"ingrese el radio";
+	cin>>a;
+	b=(pi*a)*(pi*a);
+	cout<<b;
+
+} 
+void cuadratica()
+{
+}
+
